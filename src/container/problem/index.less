@@ -1,0 +1,80 @@
+@import "../../default.less";
+
+.container {
+  padding: 4px 10px;
+  background-color: #fff !important;
+  padding-bottom: 59px;
+
+  .more {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 0px;
+  }
+
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 5px;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    color: @theme-hover;
+  }
+
+  .operation {
+    height: 50px;
+    display: flex;
+
+    .action {
+      align-self: flex-end;
+      margin: 0px 0px 4px 20px;
+    }
+  }
+
+  .ellipsis {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .warn {
+    border: 1px solid red;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    background-color: orange;
+    color: #000;
+    margin-right: 2px;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+  }
+}
+
+.edit,
+.delete {
+  cursor: pointer;
+  color: @theme;
+  padding: 0px 5px;
+}
+
+.edit:hover,
+.delete:hover {
+  color: @theme-hover;
+}
+
+.delete {
+  color: red
+}
+
+.ellipsislevel {
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 12px !important;
+}

@@ -1,0 +1,66 @@
+@import "../../default.less";
+
+.container {
+  padding: 4px 10px;
+  background-color: #fff !important;
+  padding-bottom: 59px;
+
+  .ant-advanced-search-form {
+    padding: 40px 24px;
+    background: #fcfcfc;
+    border-radius: 2px;
+
+    .ant-form-item {
+      padding: 10px 5px;
+    }
+  }
+
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 5px;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    color: @theme-hover;
+  }
+
+  .delete {
+    color: red
+  }
+
+  .project {
+    padding: 20px 10px;
+  }
+
+  .workflow {
+    position: relative;
+
+    .create-workflow {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .emotionlook {
+    color: @theme;
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+  }
+
+  .emotionlook:hover {
+    color: @theme-hover;
+  }
+
+  .look {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

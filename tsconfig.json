@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "jsx": "react",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "paths": {
+      // 设着alias别名，相似webpack，相对上面设置的基础路径
+      "@/*": ["./src/*"],
+      "config": ["./src/config"],
+      "utils": ["./src/utils"],
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

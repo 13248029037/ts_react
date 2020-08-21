@@ -1,0 +1,54 @@
+@import "../../default.less";
+
+.wrap {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ffffff;
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  transition: all 0.2s;
+  box-shadow: 1px 1px 1px 1px #eee;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+
+  .action {
+    margin-left: 10px;
+    font-size: 20px;
+    color: @theme;
+    flex: 1;
+
+    .button {
+      color: @theme;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      color: @theme-hover;
+    }
+  }
+
+  .username {
+    margin: 0px 20px;
+    color: @theme;
+
+    .avatar {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+  }
+
+  .select {
+    margin-left: 10px;
+    flex: 1
+  }
+
+}

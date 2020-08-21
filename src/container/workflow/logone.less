@@ -1,0 +1,50 @@
+@import "../../default.less";
+
+.container {
+  padding: 4px 10px;
+  background-color: #fff !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .projectlogtitle {
+    padding: 20px 10px;
+  }
+
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 5px;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    color: @theme-hover;
+  }
+
+  .delete {
+    color: red;
+  }
+
+  .workflow {
+    position: relative;
+
+    .create-workflow {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .warn {
+    color: rgb(209, 136, 1)
+  }
+
+  .button {
+    position: absolute;
+    right: 10px;
+    top: 128px;
+  }
+}

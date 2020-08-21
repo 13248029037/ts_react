@@ -1,0 +1,40 @@
+@import "../../default.less";
+
+.container {
+  padding: 4px 10px;
+  background-color: #fff !important;
+  position: relative;
+
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 5px;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    color: @theme-hover;
+  }
+
+  .delete {
+    color: red
+  }
+
+  .checkbox {
+    margin: 0px;
+    padding: 0px;
+
+    .giturl {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .checkUrl {
+      margin: 0px;
+      padding: 0px;
+
+    }
+  }
+
+}

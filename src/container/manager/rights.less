@@ -1,0 +1,22 @@
+@import "../../default.less";
+
+.container {
+  padding: 4px 10px;
+  background-color: #fff !important;
+
+  .edit,
+  .delete {
+    cursor: pointer;
+    color: @theme;
+    padding: 0px 5px;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    color: @theme-hover;
+  }
+
+  .delete {
+    color: red
+  }
+}

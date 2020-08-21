@@ -1,0 +1,63 @@
+@import "../../default.less";
+
+
+
+
+.slider-container-collaps {
+  width: 0px !important;
+  border: 0 none !important;
+}
+
+.slider-container {
+  width: 330px;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 101;
+  background-color: #fff;
+  padding: 20px 0px;
+  border-left: 1px solid #eee;
+  transition: all .3s;
+
+  .search {
+    text-align: right;
+    height: 80px;
+  }
+
+  .operation:hover {
+    background-color: @theme-hover;
+  }
+
+  .operation {
+    transition: all .3s;
+    position: absolute;
+    width: 30px;
+    left: -30px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 2px;
+    top: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    line-height: 20px;
+    transform: translateY(-50%);
+    background-color: @theme;
+  }
+
+}
+
+.slider-wrap {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  cursor: pointer;
+}

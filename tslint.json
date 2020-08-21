@@ -1,0 +1,73 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-react-hooks"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js",
+      "src/components/lay/index.tsx",
+      "src/components/routeHoc/index.tsx"
+    ]
+  },
+  "rules": {
+    "ordered-imports": false,
+    "class-name": false,
+    "no-console": false,
+    "only-arrow-functions": false,
+    "object-literal-sort-keys": false,
+    "no-string-literal": false,
+    "object-literal-shorthand": false,
+    "no-debugger": false,
+    "no-reference": false,
+    "comment-format": false,
+    "prefer-const": false,
+    "jsx-no-bind": false,
+    "jsx-no-target-blank": false,
+    "member-access": true,
+    "jsx-no-lambda": false,
+    "variable-name": false,
+    "react-hooks/exhaustive-deps": false,
+    "no-any": [
+      false,
+      {
+        "ignore-rest-args": false
+      }
+    ],
+    "no-return-await": true,
+    "whitespace": [
+      false,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ]
+  }
+}

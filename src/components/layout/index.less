@@ -1,0 +1,25 @@
+.layout-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 1320px;
+  display: flex;
+
+  .layout-content-wrapper {
+    height: 100%;
+    padding: 70px 10px 10px 10px;
+    flex: 1;
+    position: relative;
+  }
+
+  .load {
+    position: fixed !important;
+    z-index: 1000000000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+}

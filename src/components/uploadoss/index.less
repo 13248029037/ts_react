@@ -1,0 +1,23 @@
+.item {
+  position: relative;
+  padding: 0px 10px;
+  margin: 6px 0px;
+
+  .delete {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .delete :hover {
+    color: rgb(185, 23, 23);
+    font-weight: bold;
+  }
+}
+
+.item:hover {
+  background-color: #eee;
+}
